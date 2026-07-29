@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f6f4ef;
+  color: #0b1f2e;
+}
+
+/* Signature element: the ledger rule — a brass hairline with tick marks. */
+.ledger-rule {
+  position: relative;
+  height: 1px;
+  background-color: #dad4c6;
+  overflow: visible;
+}
+
+.ledger-rule::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -3px;
+  width: 56px;
+  height: 7px;
+  background-color: #b08d57;
+}
+
+.ledger-rule--ticks::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    to right,
+    #dad4c6 0,
+    #dad4c6 1px,
+    transparent 1px,
+    transparent 48px
+  );
+}
+
+.case-index {
+  font-family: var(--font-fraunces), serif;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid #b08d57;
+  outline-offset: 3px;
+}
