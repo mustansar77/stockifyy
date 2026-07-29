@@ -14,6 +14,13 @@ const config: Config = {
         teal: "#17423B",
         slate: "#5A6472",
         line: "#DAD4C6",
+        gold: "#FEA500",
+        goldMid: "#C88600",
+        goldDeep: "#7C5200",
+        amber: "#986300",
+        cream: "#FFFDF7",
+        creamSoft: "#FFF7E9",
+        creamLine: "#E8DDC8",
       },
       fontFamily: {
         display: ["var(--font-fraunces)", "Georgia", "serif"],

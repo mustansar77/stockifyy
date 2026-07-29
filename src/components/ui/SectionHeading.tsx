@@ -15,11 +15,11 @@ export default function SectionHeading({
 }: SectionHeadingProps) {
   return (
     <div className={align === "center" ? "text-center mx-auto" : ""}>
-      <p className="case-index text-brass text-sm mb-4">{index}</p>
+      <p className="case-index text-gold text-sm mb-4">{index}</p>
       <h2
-        className={`font-display text-3xl md:text-5xl max-w-2xl bg-gradient-to-r from-[#FEA500] via-[#C88600] to-[#986300] bg-clip-text text-transparent ${
+        className={`font-display text-3xl md:text-5xl max-w-2xl text-gradient-gold ${
           align === "center" ? "mx-auto" : ""
-        } ${light ? "text-paper" : "text-ink"}`}
+        }`}
       >
         {title}
       </h2>

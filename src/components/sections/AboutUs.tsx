@@ -16,11 +16,9 @@ export default function AboutUs() {
           />
         </div>
         <div className="order-1 md:order-2">
-          <p className="case-index text-brass text-sm mb-4">No. 002 — About Us</p>
+          <p className="case-index text-gold text-sm mb-4">No. 002 — About Us</p>
           <h2 className="font-display text-3xl md:text-5xl text-ink leading-tight mb-6">
-            Your Trusted Partner in <span className="bg-gradient-to-r from-[#FEA500] via-[#C88600] to-[#986300] bg-clip-text text-transparent">Smarter Investing</span>
-
-
+            Your Trusted Partner in <span className="text-gradient-gold">Smarter Investing</span>
           </h2>
           <div className="font-sans text-slate leading-relaxed space-y-5">
             <p>

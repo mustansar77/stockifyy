@@ -33,13 +33,10 @@ export default function WhyChooseUs() {
       /> */}
 
           <div className="">
-          <p className="case-index text-brass text-sm mb-4">No. 003 — Why Choose Us</p>
+          <p className="case-index text-gold text-sm mb-4">No. 003 — Why Choose Us</p>
           <h2 className="font-display text-3xl md:text-5xl text-ink leading-tight mb-6">
-            Why boards <br /> choose <span className="bg-gradient-to-r from-[#FEA500] via-[#C88600] to-[#986300] bg-clip-text text-transparent">Stockifyy</span>
-
-
+            Why investors <br /> choose <span className="text-gradient-gold">Stockifyy</span>
           </h2>
-        
         </div>
 
       <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-14 mt-12 items-center">

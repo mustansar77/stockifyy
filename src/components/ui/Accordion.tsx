@@ -25,7 +25,7 @@ export default function Accordion({ items }: { items: AccordionItem[] }) {
                 {item.question}
               </span>
               <span
-                className={`font-sans text-2xl text-brass shrink-0 transition-transform ${
+                className={`font-sans text-2xl text-gradient-gold shrink-0 transition-transform ${
                   isOpen ? "rotate-45" : ""
                 }`}
                 aria-hidden="true"

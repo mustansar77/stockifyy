@@ -5,6 +5,7 @@ export type Service = {
   summary: string;
   description: string;
   outcomes: string[];
+  image: string;
 };
 
 export type Post = {

@@ -11,13 +11,11 @@ export default function FAQSection() {
           title="Common questions before the first call."
         /> */}
 
-             <div className="">
-          <p className="case-index text-brass text-sm mb-4">No. 007 — FAQ</p>
+        <div>
+          <p className="case-index text-gold text-sm mb-4">No. 007 — FAQ</p>
           <h2 className="font-display text-3xl md:text-5xl text-ink leading-tight mb-6">
-            Common questions before the <span className="bg-gradient-to-r from-[#FEA500] via-[#C88600] to-[#986300] bg-clip-text text-transparent">first call. </span>
-
+            Common questions before the <span className="text-gradient-gold">first call.</span>
           </h2>
-          
         </div>
         <Accordion items={faqs} />
       </div>

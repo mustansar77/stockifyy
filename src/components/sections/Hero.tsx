@@ -113,7 +113,7 @@ export default function Hero() {
             {/* sub-headline */}
             <p
               className="anim-2 mt-2.5 text-base font-medium sm:text-lg md:text-xl"
-              style={{ color: "#FEA500" }}
+              style={{ color: "" }}
             >
               Pakistan&apos;s most trusted stock market advisory.
             </p>

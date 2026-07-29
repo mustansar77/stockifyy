@@ -15,6 +15,8 @@ export const services: Service[] = [
       "Due diligence coordination",
       "Post-merger integration planning",
     ],
+    image:
+      "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80",
   },
   {
     slug: "capital-strategy",
@@ -30,6 +32,8 @@ export const services: Service[] = [
       "Investor and lender readiness",
       "Scenario and sensitivity modelling",
     ],
+    image:
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80",
   },
   {
     slug: "restructuring-turnaround",
@@ -45,6 +49,8 @@ export const services: Service[] = [
       "Operational restructuring roadmap",
       "Interim management support",
     ],
+    image:
+      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80",
   },
   {
     slug: "governance-risk",
@@ -59,6 +65,8 @@ export const services: Service[] = [
       "Regulatory and compliance positioning",
       "ESG and disclosure advisory",
     ],
+    image:
+      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
   },
   {
     slug: "valuation-financial-modelling",
@@ -73,6 +81,8 @@ export const services: Service[] = [
       "Scenario and stress testing",
       "Purchase price allocation support",
     ],
+    image:
+      "https://images.unsplash.com/photo-1554260570-e9689a3418b8?w=1200&q=80",
   },
   {
     slug: "strategy-growth-advisory",
@@ -88,6 +98,8 @@ export const services: Service[] = [
       "Long-range strategic planning",
       "Competitive and market diligence",
     ],
+    image:
+      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&q=80",
   },
 ];
 

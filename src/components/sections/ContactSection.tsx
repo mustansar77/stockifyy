@@ -1,48 +1,58 @@
 export default function ContactSection() {
   return (
-    <section id="contact" className="bg-ink text-paper py-24 md:py-28 mt-24">
+    <section id="contact" className="bg-cream text-ink py-24 md:py-28 mt-24">
       <div className="max-w-content mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-16">
         <div>
-          <p className="case-index text-brass text-sm mb-4">No. 008 — Get in Touch</p>
-          <h2 className="font-display text-3xl md:text-5xl leading-tight mb-6">
-            Every conversation begins in confidence.
+          <p className="case-index text-gold text-sm mb-4">
+            No. 008 — Get in Touch
+          </p>
+
+          <h2 className="font-display text-3xl md:text-5xl leading-tight mb-6 text-ink">
+            Every conversation begins in{" "}
+            <span className="text-gradient-gold">confidence.</span>
           </h2>
-          <p className="font-sans text-paper/60 leading-relaxed max-w-md">
+
+          <p className="font-sans text-ink/60 leading-relaxed max-w-md">
             Tell us briefly about the situation. A partner will respond
-            directly, typically within one business day, and always
-            under confidentiality.
+            directly, typically within one business day, and always under
+            confidentiality.
           </p>
         </div>
+
         <form className="space-y-5">
           <div className="grid sm:grid-cols-2 gap-5">
             <input
               type="text"
               name="name"
               placeholder="Full name"
-              className="bg-transparent border border-paper/25 px-4 py-3 font-sans text-sm placeholder:text-paper/40 focus:border-brass outline-none"
+              className="bg-transparent border border-ink/25 px-4 py-3 font-sans text-sm text-ink placeholder:text-ink/40 focus:border-gold outline-none transition-colors"
             />
+
             <input
               type="email"
               name="email"
               placeholder="Work email"
-              className="bg-transparent border border-paper/25 px-4 py-3 font-sans text-sm placeholder:text-paper/40 focus:border-brass outline-none"
+              className="bg-transparent border border-ink/25 px-4 py-3 font-sans text-sm text-ink placeholder:text-ink/40 focus:border-gold outline-none transition-colors"
             />
           </div>
+
           <input
             type="text"
             name="company"
             placeholder="Company"
-            className="w-full bg-transparent border border-paper/25 px-4 py-3 font-sans text-sm placeholder:text-paper/40 focus:border-brass outline-none"
+            className="w-full bg-transparent border border-ink/25 px-4 py-3 font-sans text-sm text-ink placeholder:text-ink/40 focus:border-gold outline-none transition-colors"
           />
+
           <textarea
             name="message"
             placeholder="Briefly, what would you like to discuss?"
             rows={4}
-            className="w-full bg-transparent border border-paper/25 px-4 py-3 font-sans text-sm placeholder:text-paper/40 focus:border-brass outline-none"
+            className="w-full bg-transparent border border-ink/25 px-4 py-3 font-sans text-sm text-ink placeholder:text-ink/40 focus:border-gold outline-none transition-colors resize-none"
           />
+
           <button
             type="submit"
-            className="bg-brass text-ink font-sans text-sm px-7 py-3.5 hover:bg-paper transition-colors"
+            className="bg-gold text-ink font-sans text-sm px-7 py-3.5 hover:bg-ink hover:text-cream transition-colors"
           >
             Send confidentially
           </button>

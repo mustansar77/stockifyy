@@ -26,7 +26,7 @@ body {
   top: -3px;
   width: 56px;
   height: 7px;
-  background-color: #b08d57;
+  background-color: #fea500;
 }
 
 .ledger-rule--ticks::after {
@@ -46,6 +46,13 @@ body {
   font-family: var(--font-fraunces), serif;
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.02em;
+}
+
+.text-gradient-gold {
+  background-image: linear-gradient(to right, #fea500, #c88600, #986300);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .marquee-track:hover {
