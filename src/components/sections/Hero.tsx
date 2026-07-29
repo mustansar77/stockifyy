@@ -80,8 +80,8 @@ export default function Hero() {
       <Ticker />
 
       {/* MAIN CONTENT */}
-      <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-8  lg:px-12">
-        <div className="flex min-h-[calc(100vh-40px)] flex-col lg:flex-row lg:items-center lg:gap-10">
+      <div className="relative z-10 mx-auto max-w-content px-6 md:px-10">
+        <div className="flex min-h-[calc(100vh-40px)] flex-col lg:flex-row lg:items-center lg:gap-10 lg:py-10">
 
           {/* ════════ LEFT — copy ════════ */}
           <div className="flex w-full flex-col items-start pb-8 pt-12 sm:pb-10 sm:pt-14 lg:w-[52%] lg:py-1 lg:pr-8">
@@ -167,11 +167,11 @@ export default function Hero() {
           </div>
 
           {/* ════════ RIGHT — team image ════════ */}
-          <div className="relative flex w-full items-end justify-center pb-12 lg:w-[48%] lg:h-[calc(100vh-40px)] lg:items-end lg:justify-center lg:pb-0">
+          <div className="relative flex w-full items-center justify-center pb-12 lg:w-[48%] lg:pb-0">
 
             {/* background card — hidden on mobile/tablet, shown on desktop */}
             <div
-              className="absolute inset-x-4 bottom-10 top-10 hidden rounded-3xl lg:block lg:inset-x-0 lg:bottom-0 lg:top-16"
+              className="absolute inset-x-4 bottom-10 top-10 hidden rounded-3xl lg:block lg:-inset-x-4 lg:-top-8 lg:bottom-0"
               style={{
                 background: "linear-gradient(160deg, rgba(254,165,0,0.07) 0%, rgba(124,82,0,0.04) 100%)",
                 border: "1px solid rgba(254,165,0,0.15)",
@@ -180,7 +180,7 @@ export default function Hero() {
 
             {/* floating card 1 — DESKTOP ONLY */}
             <div
-              className="float-card-1 absolute left-0 top-14 z-20 hidden rounded-2xl px-4 py-3.5 lg:block"
+              className="float-card-1 absolute -left-4 -top-6 z-20 hidden rounded-2xl px-4 py-3.5 lg:block"
               style={{
                 background: "rgba(255,253,247,0.92)",
                 border: "1px solid rgba(254,165,0,0.25)",
@@ -202,7 +202,7 @@ export default function Hero() {
 
             {/* floating card 2 — DESKTOP ONLY */}
             <div
-              className="float-card-2 absolute bottom-20 right-0 z-20 hidden rounded-2xl px-4 py-3.5 lg:block"
+              className="float-card-2 absolute -bottom-6 -right-6 z-20 hidden rounded-2xl px-4 py-3.5 lg:block"
               style={{
                 background: "rgba(255,253,247,0.92)",
                 border: "1px solid rgba(254,165,0,0.25)",

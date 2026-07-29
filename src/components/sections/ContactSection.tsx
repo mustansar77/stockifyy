@@ -25,14 +25,14 @@ export default function ContactSection() {
               type="text"
               name="name"
               placeholder="Full name"
-              className="bg-transparent border border-ink/25 px-4 py-3 font-sans text-sm text-ink placeholder:text-ink/40 focus:border-gold outline-none transition-colors"
+              className="rounded-full bg-transparent border border-ink/25 px-5 py-3 font-sans text-sm text-ink placeholder:text-ink/40 focus:border-gold outline-none transition-colors"
             />
 
             <input
               type="email"
               name="email"
               placeholder="Work email"
-              className="bg-transparent border border-ink/25 px-4 py-3 font-sans text-sm text-ink placeholder:text-ink/40 focus:border-gold outline-none transition-colors"
+              className="rounded-full bg-transparent border border-ink/25 px-5 py-3 font-sans text-sm text-ink placeholder:text-ink/40 focus:border-gold outline-none transition-colors"
             />
           </div>
 
@@ -40,19 +40,19 @@ export default function ContactSection() {
             type="text"
             name="company"
             placeholder="Company"
-            className="w-full bg-transparent border border-ink/25 px-4 py-3 font-sans text-sm text-ink placeholder:text-ink/40 focus:border-gold outline-none transition-colors"
+            className="w-full rounded-full bg-transparent border border-ink/25 px-5 py-3 font-sans text-sm text-ink placeholder:text-ink/40 focus:border-gold outline-none transition-colors"
           />
 
           <textarea
             name="message"
             placeholder="Briefly, what would you like to discuss?"
             rows={4}
-            className="w-full bg-transparent border border-ink/25 px-4 py-3 font-sans text-sm text-ink placeholder:text-ink/40 focus:border-gold outline-none transition-colors resize-none"
+            className="w-full rounded-2xl bg-transparent border border-ink/25 px-5 py-3 font-sans text-sm text-ink placeholder:text-ink/40 focus:border-gold outline-none transition-colors resize-none"
           />
 
           <button
             type="submit"
-            className="bg-gold text-ink font-sans text-sm px-7 py-3.5 hover:bg-ink hover:text-cream transition-colors"
+            className="rounded-full bg-gradient-to-r from-gold to-goldDeep text-white font-sans text-sm font-medium px-7 py-3.5 shadow-lg hover:opacity-90 transition-opacity"
           >
             Send confidentially
           </button>
