@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { Clock } from "lucide-react";
+import { ArrowLeft, Clock } from "lucide-react";
 import LedgerRule from "@/components/ui/LedgerRule";
 import PostCard from "@/components/blog/PostCard";
 import ReadingProgressBar from "@/components/blog/ReadingProgressBar";
@@ -34,51 +34,48 @@ export default function BlogPostPage({ params }: Props) {
       <ReadingProgressBar />
       <BackToTop />
 
-      {/* Full-bleed magazine hero */}
-      <div className="relative h-[56vh] min-h-[420px] max-h-[620px] w-full overflow-hidden">
-        <Image
-          src={post.image}
-          alt={post.title}
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-ink/10" />
-
-        <div className="absolute inset-0 flex flex-col justify-end">
-          <div className="max-w-content mx-auto w-full px-6 md:px-10 pb-10 md:pb-14">
-            <Link
-              href="/blog"
-              className="inline-block text-sm text-white/80 hover:text-white transition-colors mb-6"
-            >
-              ← All insights
-            </Link>
-
-            <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-gold px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-ink">
-              {post.category}
-            </span>
-
-            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mt-4 max-w-3xl leading-tight">
-              {post.title}
-            </h1>
-
-            <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-white/70 mt-5">
-              <span>By {post.author}</span>
-              <span aria-hidden="true">·</span>
-              <span>{formatDate(post.date)}</span>
-              <span aria-hidden="true">·</span>
-              <span className="inline-flex items-center gap-1.5">
-                <Clock className="size-3.5" aria-hidden="true" />
-                {post.readTime}
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <article className="max-w-content mx-auto px-6 md:px-10 py-16 md:py-20">
-        <div className="grid lg:grid-cols-[1fr_300px] gap-14">
+        <div className="flex flex-col items-start gap-6">
+          <Link
+            href="/blog"
+            className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-2 text-sm font-medium text-ink hover:border-gold hover:text-goldDeep transition-colors"
+          >
+            <ArrowLeft className="size-4" aria-hidden="true" />
+            All insights
+          </Link>
+
+          <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-gold px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-ink">
+            {post.category}
+          </span>
+        </div>
+
+        <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-ink mt-6 max-w-3xl leading-tight">
+          {post.title}
+        </h1>
+
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-slate mt-6">
+          <span>By {post.author}</span>
+          <span aria-hidden="true">·</span>
+          <span>{formatDate(post.date)}</span>
+          <span aria-hidden="true">·</span>
+          <span className="inline-flex items-center gap-1.5">
+            <Clock className="size-3.5" aria-hidden="true" />
+            {post.readTime}
+          </span>
+        </div>
+
+        <div className="relative aspect-[16/9] w-full mt-10 rounded-2xl overflow-hidden">
+          <Image
+            src={post.image}
+            alt={post.title}
+            fill
+            priority
+            className="object-cover"
+            sizes="(min-width: 1170px) 1170px, 100vw"
+          />
+        </div>
+
+        <div className="grid lg:grid-cols-[1fr_300px] gap-14 mt-14">
           {/* Main column */}
           <div className="max-w-2xl">
             <LedgerRule />

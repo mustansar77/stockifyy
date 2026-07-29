@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { Check } from "lucide-react";
+import { ArrowLeft, Check } from "lucide-react";
 import ServiceCard from "@/components/services/ServiceCard";
 import { services, getServiceBySlug } from "@/content/services";
 
@@ -27,16 +27,22 @@ export default function ServiceDetailPage({ params }: Props) {
   return (
     <div className="bg-cream">
       <article className="max-w-content mx-auto px-6 md:px-10 py-20 md:py-28">
-        <Link href="/services" className="font-sans text-sm text-slate hover:text-goldDeep transition-colors">
-          ← All services
-        </Link>
+        <div className="flex flex-col items-start gap-6">
+          <Link
+            href="/services"
+            className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-2 text-sm font-medium text-ink hover:border-gold hover:text-goldDeep transition-colors"
+          >
+            <ArrowLeft className="size-4" aria-hidden="true" />
+            All services
+          </Link>
 
-        <span className="mt-8 inline-flex w-fit items-center gap-1.5 rounded-full border border-line bg-white px-3 py-1.5 text-[11px] font-semibold text-goldDeep shadow-sm">
-          <span className="h-1.5 w-1.5 rounded-full bg-gold" aria-hidden="true" />
-          Service {service.index}
-        </span>
+          <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-line bg-white px-3 py-1.5 text-[11px] font-semibold text-goldDeep shadow-sm">
+            <span className="h-1.5 w-1.5 rounded-full bg-gold" aria-hidden="true" />
+            Service {service.index}
+          </span>
+        </div>
 
-        <h1 className="font-display text-3xl sm:text-4xl md:text-6xl text-ink mt-4 max-w-3xl leading-tight">
+        <h1 className="font-display text-3xl sm:text-4xl md:text-6xl text-ink mt-6 max-w-3xl leading-tight">
           {service.title}
         </h1>
         <p className="font-sans text-lg text-slate max-w-xl mt-6 leading-relaxed">
@@ -49,7 +55,7 @@ export default function ServiceDetailPage({ params }: Props) {
             alt={service.title}
             fill
             className="object-cover"
-            sizes="(min-width: 1180px) 1180px, 100vw"
+            sizes="(min-width: 1170px) 1170px, 100vw"
             priority
           />
         </div>
