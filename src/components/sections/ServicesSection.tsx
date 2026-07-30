@@ -9,7 +9,8 @@ export default function ServicesSection() {
         <div className="flex items-end justify-between gap-6 mb-14">
           <SectionHeading
             index="No. 003 — Practice Areas"
-            title="Six disciplines. One point of accountability."
+            title="Six disciplines."
+            subtitle="One point of accountability."
             light
           />
           <Link

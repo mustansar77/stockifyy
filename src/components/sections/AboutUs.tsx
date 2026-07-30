@@ -4,7 +4,7 @@ import teamoffice from "../../../public/images/officeteam.png"
 export default function AboutUs() {
   return (
    <div className="bg-[#FFFDF7]">
-     <section id="about" className="max-w-content  mx-auto px-6 md:px-10 py-24 md:py-28">
+     <section id="about" className="max-w-content  mx-auto px-6 md:px-10 py-24 md:py-24">
       <div className="grid md:grid-cols-2 gap-14 items-center">
         <div className="relative aspect-[4/3] w-full order-2 md:order-1">
           <Image
@@ -16,7 +16,7 @@ export default function AboutUs() {
           />
         </div>
         <div className="order-1 md:order-2">
-          <p className="case-index text-gold text-sm mb-4">No. 002 — About Us</p>
+          <p className="case-index font-display text-ink font text-lg mb-4">About Us</p>
           <h2 className="font-display text-3xl md:text-5xl text-ink leading-tight mb-6">
             Your Trusted Partner in <span className="text-gradient-gold">Smarter Investing</span>
           </h2>

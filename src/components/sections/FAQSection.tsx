@@ -12,7 +12,7 @@ export default function FAQSection() {
         /> */}
 
         <div>
-          <p className="case-index text-gold text-sm mb-4">No. 007 — FAQ</p>
+          <p className="case-index text-ink font-display text-lg mb-4">FAQ</p>
           <h2 className="font-display text-3xl md:text-5xl text-ink leading-tight mb-6">
             Common questions before the <span className="text-gradient-gold">first call.</span>
           </h2>

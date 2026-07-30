@@ -53,6 +53,15 @@ body {
   font-weight: 700;
 }
 
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 4px 24px rgba(254,165,0,0.35); }
+  50%       { box-shadow: 0 4px 44px rgba(254,165,0,0.65); }
+}
+
+.glow-btn {
+  animation: glow-pulse 2.8s ease-in-out infinite;
+}
+
 .text-gradient-gold {
   background-image: linear-gradient(to right, #fea500, #c88600, #986300);
   -webkit-background-clip: text;

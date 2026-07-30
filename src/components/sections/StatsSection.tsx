@@ -1,4 +1,5 @@
 import { stats } from "@/content/stats";
+import Counter from "@/components/ui/Counter";
 
 export default function StatsSection() {
   return (
@@ -11,7 +12,7 @@ export default function StatsSection() {
               className="bg-paper rounded-[20px] border border-line p-9 text-center"
             >
               <p className="font-display text-4xl md:text-5xl text-ink mb-3">
-                {s.value}
+                <Counter value={s.value} />
               </p>
               <p className="font-sans text-sm text-slate uppercase tracking-widest">
                 {s.label}

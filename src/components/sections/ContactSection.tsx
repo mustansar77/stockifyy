@@ -1,10 +1,10 @@
 export default function ContactSection() {
   return (
-    <section id="contact" className="bg-cream text-ink py-24 md:py-28 mt-24">
+    <section id="contact" className="bg-cream text-ink py-24 md:py-24 ">
       <div className="max-w-content mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-16">
         <div>
-          <p className="case-index text-gold text-sm mb-4">
-            No. 008 — Get in Touch
+          <p className="case-index text-ink font-display text-lg mb-4">
+          Get in Touch
           </p>
 
           <h2 className="font-display text-3xl md:text-5xl leading-tight mb-6 text-ink">

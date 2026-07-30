@@ -12,7 +12,7 @@ const variants = {
   primary:
     "bg-gradient-to-r from-gold to-goldDeep text-white shadow-lg hover:opacity-90",
   outline:
-    "border border-gold/40 text-goldDeep hover:bg-gold/5",
+    "border border-gold/40 bg-transparent text-ink hover:border-transparent hover:bg-gradient-to-r hover:from-gold hover:to-goldDeep hover:text-white",
   accent: "bg-gold text-ink hover:bg-cream",
 };
 
@@ -26,7 +26,7 @@ export default function Button({
     <Link
       href={href}
       className={cx(
-        "inline-block font-display text-sm px-7 py-3.5 transition-colors",
+        "inline-block font-display text-sm px-7 py-3.5 transition-all hover:-translate-y-0.5",
         variants[variant],
         className
       )}

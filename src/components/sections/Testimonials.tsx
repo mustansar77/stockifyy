@@ -10,11 +10,12 @@ export default function Testimonials() {
 
   return (
  <div className="bg-[#FFFDF7]">
-     <section className="py-24 md:py-28 overflow-hidden">
+     <section className="py-24 md:py-24 overflow-hidden">
       <div className="max-w-content mx-auto px-6 md:px-10 mb-14">
         <SectionHeading
-          index="No. 005 — Our Testimonials"
-          title="Clients Who Trust Us"
+          index="Our Testimonials"
+          title="Clients Who"
+          subtitle="Trust Us"
           align="center"
         />
       </div>

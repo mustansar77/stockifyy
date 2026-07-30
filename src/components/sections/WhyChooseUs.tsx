@@ -2,19 +2,23 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { HeartHandshake, ShieldCheck, SearchCheck } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { site } from "@/content/site";
 
 const reasons = [
   {
+    icon: HeartHandshake,
     title: "Ethical Investing",
     body: "Invest in businesses that comply with Islamic principles.",
   },
   {
+    icon: ShieldCheck,
     title: "Shariah Compliance",
     body: "Only Shariah-compliant companies as per PSX Shariah Board criteria.",
   },
   {
+    icon: SearchCheck,
     title: "Financial Screening",
     body: "Companies are screened on financial ratios and business activities.",
   },
@@ -25,7 +29,7 @@ export default function WhyChooseUs() {
 
   return (
 <div className="bg-[#FFF7E9]/95">
-      <section className="max-w-content mx-auto px-6 md:px-10 py-24 md:py-28">
+      <section className="max-w-content mx-auto px-6 md:px-10 py-24 md:py-24">
       {/* <SectionHeading
         index="No. 004 — Why Choose Us"
         title={`Why boards choose ${site.name}.`}
@@ -33,7 +37,7 @@ export default function WhyChooseUs() {
       /> */}
 
           <div className="">
-          <p className="case-index text-gold text-sm mb-4">No. 003 — Why Choose Us</p>
+          <p className="case-index font-display text-ink text-lg mb-4">Why Choose Us</p>
           <h2 className="font-display text-3xl md:text-5xl text-ink leading-tight mb-6">
             Why investors <br /> choose <span className="text-gradient-gold">Stockifyy</span>
           </h2>
@@ -82,9 +86,14 @@ export default function WhyChooseUs() {
 
         <div className="space-y-8">
           {reasons.map((r) => (
-            <div key={r.title} className="border-l-2 border-[#FEA500] pl-5">
-              <h3 className="font-display text-xl text-ink mb-1">{r.title}</h3>
-              <p className="font-sans text-sm text-slate leading-relaxed">{r.body}</p>
+            <div key={r.title} className="flex items-start gap-4">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-gold to-goldDeep text-white shadow-sm">
+                <r.icon className="size-5" aria-hidden="true" />
+              </div>
+              <div>
+                <h3 className="font-display text-xl text-ink mb-1">{r.title}</h3>
+                <p className="font-sans text-sm text-slate leading-relaxed">{r.body}</p>
+              </div>
             </div>
           ))}
         </div>
