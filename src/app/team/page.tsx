@@ -37,7 +37,7 @@ export default function TeamPage() {
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
                     sizes="(min-width: 1024px) 220px, (min-width: 640px) 33vw, 45vw"
                   />
                 </div>

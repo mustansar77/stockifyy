@@ -26,41 +26,43 @@ export default function ServiceDetailPage({ params }: Props) {
 
   return (
     <div className="bg-cream">
-      <article className="max-w-content mx-auto px-6 md:px-10 py-20 md:py-28">
-        <div className="flex flex-col items-start gap-6">
-          <Link
-            href="/services"
-            className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-2 text-sm font-medium text-ink hover:border-gold hover:text-goldDeep transition-colors"
-          >
-            <ArrowLeft className="size-4" aria-hidden="true" />
-            All services
-          </Link>
+      {/* Full-bleed hero — image as background, text overlaid on top */}
+      <div className="relative h-[60vh] min-h-[460px] max-h-[620px] w-full overflow-hidden">
+        <Image
+          src={service.image}
+          alt={service.title}
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/25 to-black/60" />
 
-          <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-line bg-white px-3 py-1.5 text-[11px] font-semibold text-goldDeep shadow-sm">
-            <span className="h-1.5 w-1.5 rounded-full bg-gold" aria-hidden="true" />
+        <Link
+          href="/services"
+          className="absolute left-6 top-6 md:left-10 md:top-8 inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-2 text-sm font-medium text-ink hover:border-gold hover:text-goldDeep transition-colors"
+        >
+          <ArrowLeft className="size-4" aria-hidden="true" />
+          All services
+        </Link>
+
+        <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
+          <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-gold px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-ink">
             Service {service.index}
           </span>
+
+          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl text-white mt-5 max-w-3xl leading-tight">
+            {service.title}
+          </h1>
+
+          <p className="font-sans text-white/80 border-y border-gold/50 py-3 mt-6 max-w-xl leading-relaxed">
+            {service.summary}
+          </p>
         </div>
+      </div>
 
-        <h1 className="font-display text-3xl sm:text-4xl md:text-6xl text-ink mt-6 max-w-3xl leading-tight">
-          {service.title}
-        </h1>
-        <p className="font-sans text-lg text-slate max-w-xl mt-6 leading-relaxed">
-          {service.summary}
-        </p>
-
-        <div className="relative aspect-[21/9] w-full mt-10 rounded-2xl overflow-hidden">
-          <Image
-            src={service.image}
-            alt={service.title}
-            fill
-            className="object-cover"
-            sizes="(min-width: 1170px) 1170px, 100vw"
-            priority
-          />
-        </div>
-
-        <div className="mt-14 grid md:grid-cols-3 gap-10 md:gap-12">
+      <article className="max-w-content mx-auto px-6 md:px-10 py-16 md:py-20">
+        <div className="grid md:grid-cols-3 gap-10 md:gap-12">
           <div className="md:col-span-2">
             <p className="font-sans text-slate leading-relaxed text-lg">
               {service.description}

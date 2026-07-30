@@ -6,7 +6,6 @@ import { ArrowRight, TrendingUp, Star, BadgeCheck } from "lucide-react";
 import { Ticker } from "./Ticker";
 import Counter from "@/components/ui/Counter";
 import teamImage from "../../../public/images/team.png";
-
 export default function Hero() {
   return (
     <section className="relative overflow-hidden" style={{ background: "#FFFDF7" }}>
