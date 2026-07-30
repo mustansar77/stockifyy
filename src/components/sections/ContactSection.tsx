@@ -52,7 +52,7 @@ export default function ContactSection() {
 
           <button
             type="submit"
-            className="rounded-full bg-gradient-to-r from-gold to-goldDeep text-white font-sans text-sm font-medium px-7 py-3.5 shadow-lg hover:opacity-90 transition-opacity"
+            className="rounded-full bg-gradient-to-r from-gold to-goldDeep text-white font-display text-sm font-medium px-7 py-3.5 shadow-lg hover:opacity-90 transition-opacity"
           >
             Send confidentially
           </button>

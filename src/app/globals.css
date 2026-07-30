@@ -43,9 +43,14 @@ body {
 }
 
 .case-index {
-  font-family: var(--font-fraunces), serif;
+  font-family: var(--font-roboto), sans-serif;
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.02em;
+}
+
+/* Main titles (h1/h2/h3 and anything tagged font-display) are always Roboto Bold. */
+.font-display {
+  font-weight: 700;
 }
 
 .text-gradient-gold {

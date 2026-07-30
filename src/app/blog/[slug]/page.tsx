@@ -148,7 +148,7 @@ export default function BlogPostPage({ params }: Props) {
                 </p>
                 <Link
                   href="/#contact"
-                  className="mt-5 inline-block rounded-full bg-white text-ink font-sans text-sm font-medium px-5 py-2.5 hover:bg-cream transition-colors"
+                  className="mt-5 inline-block rounded-full bg-white text-ink font-display text-sm font-medium px-5 py-2.5 hover:bg-cream transition-colors"
                 >
                   Get in touch
                 </Link>

@@ -37,3 +37,9 @@ export type Stat = {
   value: string;
   label: string;
 };
+
+export type TeamMember = {
+  name: string;
+  role: string;
+  image: import("next/image").StaticImageData;
+};

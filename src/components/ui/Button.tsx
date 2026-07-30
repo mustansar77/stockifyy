@@ -26,7 +26,7 @@ export default function Button({
     <Link
       href={href}
       className={cx(
-        "inline-block font-sans text-sm px-7 py-3.5 transition-colors",
+        "inline-block font-display text-sm px-7 py-3.5 transition-colors",
         variants[variant],
         className
       )}

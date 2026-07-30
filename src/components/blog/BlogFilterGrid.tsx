@@ -24,7 +24,7 @@ export default function BlogFilterGrid({ posts }: { posts: Post[] }) {
               type="button"
               onClick={() => setActive(category)}
               aria-pressed={isActive}
-              className={`rounded-full px-5 py-2 text-sm font-medium transition-colors ${
+              className={`font-display rounded-full px-5 py-2 text-sm font-medium transition-colors ${
                 isActive
                   ? "bg-gold text-white"
                   : "border border-gold/30 text-ink hover:border-gold/60"

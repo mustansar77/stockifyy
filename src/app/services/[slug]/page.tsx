@@ -80,7 +80,7 @@ export default function ServiceDetailPage({ params }: Props) {
             </ul>
             <Link
               href="/#contact"
-              className="block text-center rounded-full bg-gradient-to-r from-gold to-goldDeep text-white font-sans text-sm font-medium px-5 py-3 mt-8 shadow-lg hover:opacity-90 transition-opacity"
+              className="block text-center rounded-full bg-gradient-to-r from-gold to-goldDeep text-white font-display text-sm font-medium px-5 py-3 mt-8 shadow-lg hover:opacity-90 transition-opacity"
             >
               Discuss this service
             </Link>

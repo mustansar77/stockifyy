@@ -104,7 +104,7 @@ export default function Hero() {
             </div>
 
             {/* headline */}
-            <h1 className="anim-2 mt-5 text-[2rem] font-black leading-[1.06] tracking-tight text-[#111111] sm:text-4xl md:text-5xl lg:text-[3.3rem] xl:text-[3.9rem]">
+            <h1 className="font-display anim-2 mt-5 text-[2rem] font-black leading-[1.06] tracking-tight text-[#111111] sm:text-4xl md:text-5xl lg:text-[3.3rem] xl:text-[3.9rem]">
               Grow Your Wealth
               <br />
               <span className="shimmer-text">The Right Way.</span>
@@ -128,7 +128,7 @@ export default function Hero() {
             <div className="anim-4 mt-7 flex flex-wrap items-center gap-3 sm:mt-9 sm:gap-4">
               <Link
                 href="/#contact"
-                className="glow-btn inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-bold text-white transition-transform hover:-translate-y-0.5 hover:scale-[1.02] sm:gap-2.5 sm:px-8 sm:py-4"
+                className="glow-btn font-display inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-bold text-white transition-transform hover:-translate-y-0.5 hover:scale-[1.02] sm:gap-2.5 sm:px-8 sm:py-4"
                 style={{ background: "linear-gradient(135deg, #FEA500 0%, #7C5200 100%)" }}
               >
                 Start Growing Wealth
@@ -136,7 +136,7 @@ export default function Hero() {
               </Link>
               <Link
                 href="/services"
-                className="inline-flex items-center gap-2 rounded-full border px-6 py-3 text-sm font-semibold transition-all hover:-translate-y-0.5 hover:bg-[#FEA500]/5 sm:px-8 sm:py-4"
+                className="font-display inline-flex items-center gap-2 rounded-full border px-6 py-3 text-sm font-semibold transition-all hover:-translate-y-0.5 hover:bg-[#FEA500]/5 sm:px-8 sm:py-4"
                 style={{ borderColor: "rgba(254,165,0,0.4)", color: "#7C5200" }}
               >
                 Explore Services

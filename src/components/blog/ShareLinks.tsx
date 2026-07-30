@@ -26,7 +26,7 @@ export default function ShareLinks({ title, path }: { title: string; path: strin
       <button
         type="button"
         onClick={copyLink}
-        className="inline-flex items-center gap-2 rounded-full border border-line px-4 py-2 text-sm font-medium text-ink hover:border-gold hover:text-goldDeep transition-colors"
+        className="font-display inline-flex items-center gap-2 rounded-full border border-line px-4 py-2 text-sm font-medium text-ink hover:border-gold hover:text-goldDeep transition-colors"
       >
         {copied ? (
           <Check className="size-4 text-gold" aria-hidden="true" />
@@ -38,7 +38,7 @@ export default function ShareLinks({ title, path }: { title: string; path: strin
 
       <a
         href={`mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(url)}`}
-        className="inline-flex items-center gap-2 rounded-full border border-line px-4 py-2 text-sm font-medium text-ink hover:border-gold hover:text-goldDeep transition-colors"
+        className="font-display inline-flex items-center gap-2 rounded-full border border-line px-4 py-2 text-sm font-medium text-ink hover:border-gold hover:text-goldDeep transition-colors"
       >
         <Mail className="size-4" aria-hidden="true" />
         Email

@@ -121,7 +121,7 @@ export default function Header() {
 
         <Link
           href={site.dataPortalHref}
-          className="hidden md:inline-block font-sans text-sm font-medium bg-gradient-to-r from-[#FEA500] to-[#986300] text-white shadow-lg hover:opacity-90 rounded-full px-6 py-2.5 hover:bg-paper transition-colors"
+          className="hidden md:inline-block font-display text-sm font-medium bg-gradient-to-r from-[#FEA500] to-[#986300] text-white shadow-lg hover:opacity-90 rounded-full px-6 py-2.5 hover:bg-paper transition-colors"
         >
           Data Portal
         </Link>
@@ -218,7 +218,7 @@ export default function Header() {
 
           <Link
             href={site.dataPortalHref}
-          className="mt-6 text-center rounded-full bg-gradient-to-r from-[#FEA500] to-[#986300] text-white px-5 py-3.5 font-medium shadow-lg hover:opacity-90 transition"
+          className="font-display mt-6 text-center rounded-full bg-gradient-to-r from-[#FEA500] to-[#986300] text-white px-5 py-3.5 font-medium shadow-lg hover:opacity-90 transition"
           >
             Data Portal
           </Link>

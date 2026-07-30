@@ -12,7 +12,7 @@ export const site = {
   nav: [
     { href: "/", label: "Home" },
     { href: "/#about", label: "About Us" },
-    { href: "/#team", label: "Our Team" },
+    { href: "/team", label: "Our Team" },
     { href: "/blog", label: "Blogs" },
     { href: "/#contact", label: "Contact Us" },
   ],
