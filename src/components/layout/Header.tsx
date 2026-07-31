@@ -79,20 +79,20 @@ export default function Header() {
             </button>
 
             <div
-              className={`absolute left-1/2 -translate-x-1/2 top-full pt-3 w-72 transition-all duration-150 ${
+              className={`absolute left-1/2 -translate-x-1/2 top-full pt-3 w-80 transition-all duration-150 ${
                 servicesOpen
                   ? "opacity-100 translate-y-0 pointer-events-auto"
                   : "opacity-0 -translate-y-1 pointer-events-none"
               }`}
             >
-         <div className="bg-white rounded-2xl border border-gray-200 shadow-xl py-2 w-64">
+         <div className="bg-white rounded-2xl border border-gray-200 shadow-xl py-2 w-80 max-h-[70vh] overflow-y-auto">
   {services.map((s) => (
     <Link
       key={s.slug}
       href={`/services/${s.slug}`}
-      className="block px-5 py-3 text-sm text-gray-700 hover:bg-[#FFF7E9] hover:text-[#986300] transition"
+      className="block px-5 py-3 text-sm leading-snug text-gray-700 hover:bg-[#FFF7E9] hover:text-[#986300] transition"
     >
-      {s.title}
+      {s.navLabel}
     </Link>
   ))}
 
@@ -194,9 +194,9 @@ export default function Header() {
                   <Link
                     key={s.slug}
                     href={`/services/${s.slug}`}
-                    className="py-2.5 text-sm text-[#1A1A1A]/70 hover:text-[#986300]"
+                    className="py-2.5 text-sm leading-snug text-[#1A1A1A]/70 hover:text-[#986300]"
                   >
-                    {s.title}
+                    {s.navLabel}
                   </Link>
                 ))}
                 <Link href="/services" className="py-2.5 text-sm text-brass">

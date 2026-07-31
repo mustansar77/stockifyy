@@ -1,11 +1,20 @@
+export type ServiceFeature = {
+  title: string;
+  description: string;
+};
+
 export type Service = {
   slug: string;
-  index: string;
+  navLabel: string;
   title: string;
+  tagline: string;
+  icon: import("lucide-react").LucideIcon;
   summary: string;
-  description: string;
-  outcomes: string[];
-  image: string;
+  intro: string[];
+  features: ServiceFeature[];
+  image1: string | import("next/image").StaticImageData;
+  image2: string | import("next/image").StaticImageData;
+  metaDescription: string;
 };
 
 export type Post = {

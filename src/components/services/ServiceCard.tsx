@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { Service } from "@/types";
 
 export default function ServiceCard({ service }: { service: Service }) {
+  const Icon = service.icon;
   return (
     <Link
       href={`/services/${service.slug}`}
@@ -11,7 +12,7 @@ export default function ServiceCard({ service }: { service: Service }) {
       <div className="p-3 pb-0">
         <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden">
           <Image
-            src={service.image}
+            src={service.image1}
             alt={service.title}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -21,9 +22,8 @@ export default function ServiceCard({ service }: { service: Service }) {
       </div>
 
       <div className="flex flex-col flex-1 px-5 pb-6 pt-4">
-        <span className="relative z-10 -mt-8 mb-4 inline-flex w-fit items-center gap-1.5 rounded-full border border-line bg-white px-3 py-1.5 text-[11px] font-semibold text-goldDeep shadow-sm">
-          <span className="h-1.5 w-1.5 rounded-full bg-gold" aria-hidden="true" />
-          Service {service.index}
+        <span className="relative z-10 -mt-8 mb-4 inline-flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-r from-gold to-goldDeep text-white shadow-sm">
+          <Icon className="size-4" aria-hidden="true" />
         </span>
 
         <h2 className="font-display text-lg md:text-xl text-ink font-semibold leading-snug line-clamp-2">

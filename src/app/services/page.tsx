@@ -5,7 +5,7 @@ import { services } from "@/content/services";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Six advisory disciplines: M&A, capital strategy, restructuring, governance, valuation, and growth strategy.",
+    "Nine Shariah-compliant advisory services: premium market access, one-on-one advisory, corporate advisory, wealth planning, trade calls, education, webinars and taxation guidance.",
 };
 
 export default function ServicesPage() {
@@ -14,15 +14,14 @@ export default function ServicesPage() {
       <section className="max-w-content mx-auto px-6 md:px-10 py-20 md:py-28">
         <div className="text-center max-w-2xl mx-auto">
           <span className="inline-block rounded-full border border-gold/40 bg-gold/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-goldDeep">
-            Practice Areas
+            What We Offer
           </span>
           <h1 className="font-display text-4xl md:text-5xl text-ink font-semibold mt-5">
-            Advisory built around the decision.
+            Financial services built around you.
           </h1>
           <p className="font-sans text-slate mt-4 leading-relaxed">
-            Each discipline below is led by a partner directly. We take on a
-            deliberately limited number of engagements at any time, so every
-            mandate has senior attention from day one.
+            Every service is Shariah-compliant and grounded in research —
+            from your first trade to institutional-grade portfolio strategy.
           </p>
         </div>
 
