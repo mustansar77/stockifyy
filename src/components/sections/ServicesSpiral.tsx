@@ -312,7 +312,7 @@ export default function ServicesSpiral() {
     <div className="bg-[#FFFDF7]">
       <section className="max-w-content mx-auto px-6 md:px-10 py-12 md:py-14">
         <div className="text-center max-w-2xl mx-auto">
-          <p className="case-index text-ink font text-lg mb-4">What We Offer</p>
+          <p className="case-index text-ink font-display text-lg mb-4">What We Offer</p>
           <h2 className="font-display text-3xl md:text-5xl text-ink leading-tight">
             Our <span className="text-gradient-gold">Financial Services</span>
           </h2>
