@@ -1,6 +1,6 @@
 "use client";
 
-const WHATSAPP_NUMBER = "923001234567"; // Replace with actual number
+const WHATSAPP_NUMBER = "923362444466"; // Replace with actual number
 const WHATSAPP_MESSAGE = "Hello! I'm interested in learning more about Stockifyy's services.";
 
 export default function WhatsAppButton() {

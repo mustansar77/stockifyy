@@ -41,10 +41,10 @@ function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
 }
 
 const socials = [
-  { label: "Twitter", href: "#", icon: TwitterIcon },
-  { label: "YouTube", href: "#", icon: YoutubeIcon },
-  { label: "Facebook", href: "#", icon: FacebookIcon },
-  { label: "Instagram", href: "#", icon: InstagramIcon },
+  { label: "Twitter", href: "https://x.com/stockifyypsx?s=11", icon: TwitterIcon },
+  { label: "YouTube", href: "https://youtube.com/@stockifyyltd?si=pi4Kcdn5PxqYyra6", icon: YoutubeIcon },
+  { label: "Facebook", href: "https://www.facebook.com/share/1BxKXSkqKb/?mibextid=wwXIfr", icon: FacebookIcon },
+  { label: "Instagram", href: "https://www.instagram.com/stockifyyltd?igsh=aTl1OTQ2MjI4YW9y&utm_source=qr", icon: InstagramIcon },
 ];
 
 export default function Footer() {
