@@ -58,27 +58,27 @@ export default function TeamPage() {
           ))}
         </div>
 
-        {/* Directors row — smaller cards */}
-        <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 gap-6">
+        {/* Directors row — small cards centered */}
+        <div className="mt-10 flex flex-wrap justify-center gap-5">
           {directors.map((member) => (
             <div
               key={member.name}
-              className="flex flex-col items-center text-center rounded-2xl border border-line bg-white shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden"
+              className="w-[42%] sm:w-40 max-w-[160px] flex flex-col items-center text-center rounded-xl border border-line bg-white shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden"
             >
-              <div className="p-3 pb-0 w-full">
-                <div className="relative aspect-[3/4] w-full overflow-hidden rounded-xl">
+              <div className="p-2 pb-0 w-full">
+                <div className="relative aspect-[3/4] w-full overflow-hidden rounded-lg">
                   <Image
                     src={member.image}
                     alt={member.name}
                     fill
                     className="object-cover object-top"
-                    sizes="(min-width: 640px) 33vw, 45vw"
+                    sizes="(min-width: 640px) 160px, 42vw"
                   />
                 </div>
               </div>
-              <div className="px-4 py-4">
-                <h2 className="font-display text-base text-ink">{member.name}</h2>
-                <p className="font-sans text-xs text-gold font-medium mt-1">{member.role}</p>
+              <div className="px-3 py-3">
+                <h2 className="font-display text-sm text-ink leading-tight">{member.name}</h2>
+                <p className="font-sans text-xs text-gold font-medium mt-0.5">{member.role}</p>
               </div>
             </div>
           ))}
